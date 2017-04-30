@@ -1,5 +1,6 @@
 class MeowsController < ApplicationController
   before_action :set_meow, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!
 
   # GET /meows
   # GET /meows.json
